@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
     <title>Intention Timer</title>
   </head>
   <body>
@@ -11,13 +12,43 @@
     </header>
     <main>
       <div class="column1">
-        <h2>New Activity</h2>
+        <h2 class="column-title">New Activity</h2>
         <section class="activity-section">
-          <div class="categorie">
-            <h2>Select a category:</h2>
-            
+          <h3>Select a category:</h3>
+            <div class="categories">
+              <div class="box study-box">
+                <img src="assets/study.svg" alt="study icon">
+                <h3>Study</h3>
+              </div>
+              <div class="box meditate-box">
+                <img src="assets/meditate.svg" alt="meditate icon">
+                <h3>Meditate</h3>
+              </div>
+              <div class="box exercise-box">
+                <img src="assets/exercise.svg" alt="exercise icon">
+                <h3>Exercise</h3>
+              </div>
+            </div>
+            <h3>What would you like to accomplish during this time?</h3>
+            <input class="to-accomplish" type="text" name="accomplishments">
+            <div class="timer-input">
+              <div class="mins">
+                <h3>Minutes</h3>
+                <input type="text" name="minutes">
+              </div>
+              <div class="secs">
+                <h3>Seconds</h3>
+                <input type="text" name="seconds">
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="start-button" type="button">START ACTIVITY</button>
+            </div>
           </div>
         </section>
+      </div>
+      <div class="column2">
+        <h2 class="column-title">Past Activities</h2>
       </div>
     </main>
 
