@@ -66,6 +66,24 @@ h1 {
   margin: 20px 0 50px 0;
 }
 
+.study-box:hover,
+.study-box .active {
+  color: #B3FD78;
+  border: 2px solid #B3FD78;
+}
+
+.meditate-box:hover,
+.meditate-box .active {
+  color: #C278FD;
+  border: 2px solid #C278FD;
+}
+
+.exercise-box:hover,
+.exercise-box .active {
+  color: #FD8078;
+  border: 2px solid #FD8078;
+}
+
 .to-accomplish {
   width: 100%;
 }
