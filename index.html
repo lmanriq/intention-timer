@@ -13,36 +13,42 @@
     <main>
       <div class="column1">
         <h2 class="column-title">New Activity</h2>
-        <section class="activity-section">
-          <h3>Select a category:</h3>
-            <div class="categories">
-              <div class="box study-box">
-                <img src="assets/study.svg" alt="study icon">
-                <h3>Study</h3>
+        <section id="main-box" class="activity-section">
+          <div id="input-form">
+            <h3>Select a category:</h3>
+              <div id="categories" class="categories">
+                <div id="study-box" class="box study-box">
+                  <img src="assets/study.svg" alt="study icon">
+                  <h3>Study</h3>
+                </div>
+                <div id="meditate-box" class="box meditate-box">
+                  <img src="assets/meditate.svg" alt="meditate icon">
+                  <h3>Meditate</h3>
+                </div>
+                <div id="exercise-box" class="box exercise-box">
+                  <img src="assets/exercise.svg" alt="exercise icon">
+                  <h3>Exercise</h3>
+                </div>
               </div>
-              <div class="box meditate-box">
-                <img src="assets/meditate.svg" alt="meditate icon">
-                <h3>Meditate</h3>
+              <div class="accomplish-input">
+                <h3>What would you like to accomplish during this time?</h3>
+                <input id="accomplish-input" class="to-accomplish" type="text" name="accomplishments">
+                <!-- <p class="warning"><img src="assets/warning.svg">This field is required</p> -->
               </div>
-              <div class="box exercise-box">
-                <img src="assets/exercise.svg" alt="exercise icon">
-                <h3>Exercise</h3>
+              <div class="timer-input">
+                <div class="mins">
+                  <h3>Minutes</h3>
+                  <input id="mins-input" type="number" name="minutes">
+                </div>
+                <div class="secs">
+                  <h3>Seconds</h3>
+                  <input id="secs-input" type="number" name="seconds">
+                </div>
+              </div>
+              <div class="button-container">
+                <button id="start-btn" class="start-button" type="button">START ACTIVITY</button>
               </div>
             </div>
-            <h3>What would you like to accomplish during this time?</h3>
-            <input class="to-accomplish" type="text" name="accomplishments">
-            <div class="timer-input">
-              <div class="mins">
-                <h3>Minutes</h3>
-                <input type="number" name="minutes">
-              </div>
-              <div class="secs">
-                <h3>Seconds</h3>
-                <input type="number" name="seconds">
-              </div>
-            </div>
-            <div class="button-container">
-              <button class="start-button" type="button">START ACTIVITY</button>
             </div>
           </div>
         </section>
@@ -53,4 +59,5 @@
     </main>
 
   </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
