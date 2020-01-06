@@ -55,6 +55,7 @@ h1 {
 .activity-section {
   padding: 30px 80px;
   margin: 20px;
+  height: 100%;
 }
 
 .box {
@@ -67,19 +68,22 @@ h1 {
 }
 
 .study-box:hover,
-.study-box .active {
+.study-box.active,
+.green {
   color: #B3FD78;
   border: 2px solid #B3FD78;
 }
 
 .meditate-box:hover,
-.meditate-box .active {
+.meditate-box.active,
+.purple {
   color: #C278FD;
   border: 2px solid #C278FD;
 }
 
 .exercise-box:hover,
-.exercise-box .active {
+.exercise-box.active,
+.orange {
   color: #FD8078;
   border: 2px solid #FD8078;
 }
@@ -117,4 +121,51 @@ input {
   padding: 5px 20px;
   margin-top: 50px;
   color: #46424D;
+}
+
+.error  {
+  border-bottom: 2px solid #EFB7EC;
+  margin-bottom: 8px;
+}
+
+.warning {
+  color: #EFB7EC;
+  margin-bottom: 10px;
+}
+
+.warning img {
+  height: 12px;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+}
+
+.timer-container {
+  flex-direction: column;
+}
+
+.timer-container,
+.circle {
+  display: flex;
+  align-items: center;
+}
+
+.circle p {
+  text-align: center;
+  width: 50%;
+}
+
+.time {
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+h4 {
+  margin-top: 40px;
+  font-size: 20px;
 }
